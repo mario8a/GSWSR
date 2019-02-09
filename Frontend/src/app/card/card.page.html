@@ -1,3 +1,12 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button [routerLink]="'/perfil/'" routerDirection="back"><ion-icon name="arrow-back" size="large"></ion-icon></ion-button>
+        </ion-buttons>
+      <ion-title>Pago</ion-title>
+    </ion-toolbar>
+</ion-header>
+
 <ion-content>
 <main>
   <article class="slds-card">
@@ -41,7 +50,7 @@
                   </div>
                 </div><br>
                 <div text-center>
-                  <ion-button href="/tabs/(home:home)" routerDirection="back" color="primary" expand="full" (click)="presentLoading()">REALIZAR PAGO</ion-button>
+                  <ion-button [routerLink]="'/card/'" routerDirection="back" color="primary" expand="full" (click)="presentLoading()">AGREGAR</ion-button>
                 </div><br>
                 <p text-center><a href="https://www.openpay.mx" alt="NPM" title="Install with NPM">
                   <img align="center" src="../../assets/img/openpay.png" style="height:25px; background:transparent;"/>
