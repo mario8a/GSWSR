@@ -6,7 +6,8 @@ const routes: Routes = [
   { path: 'app', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'card', loadChildren: './card/card.module#CardPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' }
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
+  { path: 'perfil', loadChildren: './perfil/perfil.module#PerfilPageModule' }
 ];
 @NgModule({
   imports: [
