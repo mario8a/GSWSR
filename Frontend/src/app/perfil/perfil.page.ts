@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilPage implements OnInit {
 
-  varNombre = "Mauricio"
-  varApellido = "Garduño"
+  varNombre = "Juan"
+  varApellido = "Carlos"
 
   constructor() { }
 

@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
         <ion-buttons slot="start">
-            <ion-button [routerLink]="'/perfil/'" routerDirection="back"><ion-icon name="arrow-back" size="large"></ion-icon></ion-button>
+            <ion-button [routerLink]="'/app/'" routerDirection="back"><ion-icon name="arrow-back" size="large"></ion-icon></ion-button>
         </ion-buttons>
       <ion-title>Pago</ion-title>
     </ion-toolbar>
@@ -50,7 +50,7 @@
                   </div>
                 </div><br>
                 <div text-center>
-                  <ion-button [routerLink]="'/card/'" routerDirection="back" color="primary" expand="full" (click)="presentLoading()">AGREGAR</ion-button>
+                  <ion-button [routerLink]="'/perfil/'" routerDirection="back" color="primary" expand="block" (click)="presentLoading()">AGREGAR</ion-button>
                 </div><br>
                 <p text-center><a href="https://www.openpay.mx" alt="NPM" title="Install with NPM">
                   <img align="center" src="../../assets/img/openpay.png" style="height:25px; background:transparent;"/>

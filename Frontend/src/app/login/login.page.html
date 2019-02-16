@@ -3,10 +3,10 @@
   
     <div text-center>
   
-      <img src="../../assets/icon/favicon.png" alt="" height="120" width="120">
-  
-      <h1 color="primary">Bienvenido a Match Music</h1>
-  
+      <br>
+      <img src="../../assets/crowdshopping.png" alt="" width=75% height=75%>
+      <br>
+      
       <ion-item>
         <ion-label position="stacked">Email:</ion-label>
         <ion-input type="email" placeholder="Ingresa tu correo"></ion-input>
@@ -19,8 +19,12 @@
   
       <br>
   
-      <ion-button color="light" expand="block" fill="solid">Iniciar sesion</ion-button>
+      <ion-button color="light" expand="block" fill="solid" (click)="presentLoadingWithOptions()">Iniciar sesion</ion-button>
       <ion-button expand="block" fill="clear" [routerLink]="'/register/'" routerDirection="forward">Registrarme</ion-button>
+
+      <p>Continuar con:</p>
+
+    <ion-button color="dark" expand="block" fill="solid" [routerLink]="'/app/'" routerDirection="root" (click)="presentLoadingWithOptions()"><ion-icon name="logo-facebook"></ion-icon>Facebook</ion-button>
   
     </div>
   </ion-content>
