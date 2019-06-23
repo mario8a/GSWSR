@@ -1,22 +1,28 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Producto</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>Producto</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <div text-center>
-    <h3>Cantidad</h3>
-    <ion-button color="danger">-</ion-button><p>1</p> <ion-button color="danger">+</ion-button>
+    <ion-card>
+        <ion-img src="/assets/imgSW/jardin2.png"></ion-img>
+        <ion-card-header>
+            <ion-card-title>Podadora de jardin</ion-card-title>
+        </ion-card-header>
 
-    <h4>Total: $795</h4>
+        <ion-card-content>
+            <ion-row>
+                <ion-col>
+                    <h5>Precio por dia</h5>
+                </ion-col>
+                <ion-col>
+                    <h5>$80</h5>
+                </ion-col>
+            </ion-row>
+            <ion-button size="small">Rentar</ion-button>
+        </ion-card-content>
+    </ion-card>
 
-    <div class="w3-light-grey">
-        <div class="w3-container w3-red w3-center" style="width:50%"><strong>62% de 24</strong></div>
-    </div>
-
-    <div class="card-button"><ion-button color="danger" [routerLink]="'/card/'" routerDirection="forward"><strong>CONTINUAR</strong></ion-button></div>
-
-  </div>
 
 </ion-content>
